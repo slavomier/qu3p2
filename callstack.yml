@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://storage.googleapis.com/config-schema/schema.v2.json
+
+pr_review:
+  modules:
+    bug_hunter:
+      enabled: true
+      suggestions: true
+
+    code_suggestions:
+      enabled: false
+
+    code_conventions:
+      enabled: false
+      conventions: |
+        Exported code should be defined before internal code.
+
+    description:
+      enabled: true
+      diagram: true
+
+    grammar:
+      enabled: true
+
+    performance:
+      enabled: true
+
+    security:
+      enabled: true
+
+  exclude:
+    - "**/go.*"
